@@ -64,7 +64,7 @@ class DetailsPage extends StatelessWidget {
                       style: Theme.of(context).textTheme.subtitle1,
                     ),
                   ),
-                  SizedBox(height: 32),
+                  const SizedBox(height: 32),
                   Center(
                     child: SizedBox(
                       width: 200,

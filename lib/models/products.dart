@@ -19,7 +19,9 @@ List<Product> demo_product = [
   Product(
       image: 'assests/images/camera.png',
       title: 'Camera',
-      description: 'One of the best Camera',
+      description:
+          'High resolution 8K x 8K images and the world\'s largest FOV of 25 mm enable you to obtain more data than ever,'
+          'expanding the possibilities of a wide range of research fields\.',
       price: 20,
       quantiy: 10,
       bgColor: Colors.white),
@@ -33,7 +35,9 @@ List<Product> demo_product = [
   Product(
       image: 'assests/images/powerbank.jpg',
       title: 'Camera',
-      description: 'One of the best Camera',
+      description:
+          'High resolution 8K x 8K images and the world\'s largest FOV of 25 mm enable you to obtain more data than ever,'
+          'expanding the possibilities of a wide range of research fields\.',
       price: 50,
       quantiy: 10,
       bgColor: Colors.white),

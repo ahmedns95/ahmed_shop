@@ -1,3 +1,4 @@
+import 'package:ahmed_shop/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
@@ -54,7 +55,7 @@ class SideLeftDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const LogInPage(),
+                  builder: (context) => LogInPage(),
                 ),
               );
             },
@@ -62,7 +63,14 @@ class SideLeftDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.app_registration),
             title: const Text('Register'),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RegisterPage(),
+                ),
+              );
+            },
           ),
         ],
       ),

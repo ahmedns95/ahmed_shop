@@ -1,3 +1,4 @@
+import 'package:ahmed_shop/home/details_page.dart';
 import 'package:ahmed_shop/models/product_card.dart';
 import 'package:ahmed_shop/models/products.dart';
 import 'package:ahmed_shop/models/section_title.dart';
@@ -38,8 +39,9 @@ class ComingSoon extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                LogInPage()) //change it to Details
+                            builder: (context) => DetailsPage(
+                                product:
+                                    demo_product[index])) //change it to Details
                         );
                   },
                 ),

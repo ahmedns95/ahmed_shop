@@ -1,13 +1,14 @@
 import 'package:ahmed_shop/home/comming_soon.dart';
 import 'package:ahmed_shop/home/new_product.dart';
 import 'package:ahmed_shop/widget/side_left_drawer.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:ahmed_shop/models/products.dart';
 
-import 'models/product_card.dart';
-import 'models/section_title.dart';
+import 'models/search_bar.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -81,14 +82,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '    Welcome to Ahmed Tech',
               style: TextStyle(color: Colors.black, fontSize: 20.0),
             ),
-            SectionTitle(
-              title: 'New Product',
-              pressSeeAll: () {},
-            ),
+            const SearchBar(),
             const NewProduct(),
             const ComingSoon(),
             const NewProduct(),
-            const ComingSoon(),
           ],
         ),
       ),
